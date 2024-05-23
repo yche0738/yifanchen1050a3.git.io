@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK SPUERMARKET</title>
+    <!-- Linking to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    
+
+</head>
+<body>
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/logo.jpg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="#gallery-1716" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#menu-1001" class="cs-li-link">
+                            Specials
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#services-1829" class="cs-li-link">
+                            Our Store
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#reviews-1672" class="cs-li-link">
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#faq-1466" class="cs-li-link">
+                            FAQ
+                        </a>
+                    
+                    </li>
+                    </li>
+                     <li class="cs-li">
+                      <a href="#sign in" class="cs-link">Sign In</a> <!-- 新增的 Sign In 按钮 -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+
+
+<br><br><br><br><br>
+
+
+
+<!-- ============================================ -->
+<!--                  Home                        -->
+<!-- ============================================ -->
+
+<section id="gallery-1716">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">HongKong Supermarket</h1>
+            <h2 class="cs-title">Welcome</h2>
+            <!--If you remove the cs-text, the rectangle shape will disappear.  If you need to remove it, transfer the :before and .cs-text:last-of-type styles to the cs-title on mobile and desktop-->
+            <p class="cs-text">
+                Hong Kong Supermarket brings you the best of Asian cooking, with a range of products including groceries, fresh fruit & veg, deli & eggs, baked goods, frozen, liquor, butchery, household, and health & beauty. We pride ourselves on our wide range of products - our customers tell us if you can’t find it in Hong Kong, you can’t find it in Melbourne!
+            </p>
+            
+        </div>
+        <div class="cs-gallery">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                        srcset="images/Snacks and drinks.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                        srcset="images/Snacks and drinks.jpg">
+                <img loading="lazy" decoding="async"
+                        src="images/Snacks and drinks.jpg" alt="picture"
+                        width="480" height="549">
+            </picture>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                        srcset="images/groceries.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                        srcset="images/groceries.jpg">
+                <img loading="lazy" decoding="async"
+                        src="images/groceries.jpg" alt="picture"
+                        width="480" height="549">
+            </picture>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                        srcset="images/liquor.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                        srcset="images/liquor.jpg">
+                <img loading="lazy" decoding="async"
+                        src="images/liquor.jpg" alt="picture"
+                        width="480" height="549">
+            </picture>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--                    Menu                      -->
+<!-- ============================================ -->
+
+<section id="menu-1001">
+    <div class="cs-container">
+        <div class="cs-content">
+            <picture class="cs-wrapper" aria-hidden="true">
+                
+            </picture>
+            
+            <p class="cs-text">
+                Today's Specials
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/discount 1.jpg">
+                    <source media="(min-width: 601px)" srcset="images/discount 1.jpg">
+                    <img loading="lazy" decoding="async" src="images/discount 1.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Nong Shim Shin Ramyun 5 Pack</span>
+                        <span class="cs-price">
+                            $12/2ea
+                        </span>
+                    </h3>
+                    
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/discount 2.jpg">
+                    <source media="(min-width: 601px)" srcset="images/discount 2.jpg">
+                    <img loading="lazy" decoding="async" src="images/discount 2.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Laoganma Spicy Chilli Sauce 210g</span>
+                        <span class="cs-price">
+                            $10
+                        </span>
+                    </h3>
+                    
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/discount 3.jpg">
+                    <source media="(min-width: 601px)" srcset="images/discount 3.jpg">
+                    <img loading="lazy" decoding="async" src="images/discount 3.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">S&b Golden Curry Mix Mild 92g</span>
+                        <span class="cs-price">
+                            $12
+                        </span>
+                    </h3>
+                    
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/discount 4.jpg">
+                    <source media="(min-width: 601px)" srcset="images/discount 4.jpg">
+                    <img loading="lazy" decoding="async" src="images/discount 4.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Mesona Grass Jelly Drink 320g</span>
+                        <span class="cs-price">
+                            $1
+                        </span>
+                    </h3>
+                    
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/discount 5.jpg">
+                    <source media="(min-width: 601px)" srcset="images/discount 5.jpg">
+                    <img loading="lazy" decoding="async" src="images/discount 5.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Nissin Black Garlic Oil Tonkotsu 5 Pack</span>
+                        <span class="cs-price">
+                            $11
+                        </span>
+                    </h3>
+                    
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/discount 6.jpg">
+                    <source media="(min-width: 601px)" srcset="images/discount 6.jpg">
+                    <img loading="lazy" decoding="async" src="images/discount 6.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Lee Kum Kee Soy Sauce | 500mL</span>
+                        <span class="cs-price">
+                            $9
+                        </span>
+                    </h3>
+                    
+                </div>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Choose You want</a>
+    </div>
+    <!--Static background is in CSS as a tiled pattern-->
+</section>
+
+
+
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1829">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Store</span>
+            <p class="cs-text">
+                Goods from all over the world gather in Hong Kong supermarkets
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/Fresh fruit & veg.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/Fresh fruit & veg.jpg">
+                        <img loading="lazy" decoding="async" src="images/Fresh fruit & veg.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Fresh fruit & veg</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/Freezer.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/Freezer.jpg">
+                        <img loading="lazy" decoding="async" src="images/Freezer.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Freezer</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/Fridge & eggs.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/Fridge & eggs.jpg">
+                        <img loading="lazy" decoding="async" src="images/Fridge & eggs.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Fridge & eggs</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/groceries.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/groceries.jpg">
+                        <img loading="lazy" decoding="async" src="images/groceries.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">groceries</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/Health & beauty.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/Health & beauty.jpg">
+                        <img loading="lazy" decoding="async" src="images/Health & beauty.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Health & beauty</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/Liquor.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/Liquor.jpg">
+                        <img loading="lazy" decoding="async" src="images/Liquor.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Liquor</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/Snacks and drinks.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/Snacks and drinks.jpg">
+                        <img loading="lazy" decoding="async" src="images/Snacks and drinks.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Snacks and drinks</h3>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/Baked goods.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/Baked goods.jpg">
+                        <img loading="lazy" decoding="async" src="images/Baked goods.jpg" alt="person" width="500" height="700">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Bakes</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Background Image, background image added in the css at 768px for parallax effect -->
+   
+    <!-- Top left gold graphic -->
+    
+</section>
+
+
+
+
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1672">
+    <div class="cs-container">
+        <div class="cs-content">
+            
+            <h2 class="cs-title">Our Customer Reviews</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/customer2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        lili
+                        <span class="cs-job">Google Reviews</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                        Simply the best Asian supermarket in Melbourne! They have the biggest selections I have seen anywhere. The shopping environment is great, always clean and neat. Products are fresh and reasonably priced. A must-visit place in Clayton
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/customer1.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Bel
+                        <span class="cs-job">Google Reviews</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                        Best place for Asian groceries I have found in either Melbourne or Sydney. This place has it all in one very simple location. Can do the whole week shopping in one location without difficulty of finding those hard to get ingredients.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/customer3.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        matt
+                        <span class="cs-job">Google Reviews</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                        Best place for Asian groceries I have found in either Melbourne or Sydney. This place has it all in one very simple location. Can do the whole week shopping in one location without difficulty of finding those hard to get ingredients.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+
+
+
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1466">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="Images/outlook1.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="Images/outlook1.jpg">
+            <img loading="lazy" decoding="async" src="Images/outlook1.jpg" alt="body shop" width="522" height="609" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Are you open today?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We are open 8am - 8pm every day of the year except Christmas, Boxing Day, and New Years Day!
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is your return policy?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        If you have problems with any items in your purchase, we will offer a refund or exchange within 7 days of purchase (with receipt). 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Which payment offers do you accept?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We accept all cash and credit cards except for American Express and Union Pay. We also accept WeChat pay and Alipay payments. No minimum spend is required
+
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Where are you located? 
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We are located at 359-365 Clayton Road, Clayton, 3168, Victoria. Parking is available behind our store on Cooke Street, and along Clayton Road. You can also easily access our store by public transport (we are a short walk from Clayton station, and Clayton bus interchange)
+                    </p>
+                </li>
+
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How to contact with us?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Phone
+                        (03) 9562 8412
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<footer id="footer-1390">
+    <div class="cs-container">
+        <div class="cs-top">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" loading="lazy" decoding="async" src="images/logo.jpg" alt="logo" width="209" height="40">
+            </a>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="#gallery-1716" class="cs-link">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a href="#menu-1001" class="cs-link">Specials</a>
+                </li>
+                <li class="cs-li">
+                    <a href="#services-1829" class="cs-link">Our Store</a>
+                </li>
+                <li class="cs-li">
+                    <a href="#reviews-1672" class="cs-link">Review</a>
+                </li>
+                <li class="cs-li">
+                    <a href="#faq-1466" class="cs-link">FQA</a> 
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <!--Social-->
+            <ul class="cs-social">
+                <li class="cs-social-li">
+                    <a href="https://www.facebook.com/hksupermarketAU" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="https://www.instagram.com/hongkongsupermarket/" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+            </ul>
+            <span class="cs-copyright">
+                © Copyright 2023 - <a href="" class="cs-copyright-link">Stitch Agency</a>
+            </span>
+            <div class="cs-flex">
+                <a href="" class="cs-copyright-link">Privacy Policy</a>
+                <span class="cs-separater">|</span>
+                <a href="" class="cs-copyright-link">Terms of Use</a>
+                <p>Here is a link to <a href="https://www.hongkongsupermarket.com.au/latest-updates" target="_blank">Original Websitev link</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+                                
+
+
+
+
+    
+<sign in id="sign in">
+    <title>Sign In</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container signin-container"> 
+        <h2 class="mt-5">Sign In</h2>
+        <form id="signinForm">
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</sign in>
+
+
+
+                                
+                                
+                                
+<script src="script.js"></script> <!-- Including external JavaScript file -->
+</body>
+</html>
